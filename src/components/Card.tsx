@@ -1,6 +1,3 @@
-
-'use client'
-
 import { motion } from 'framer-motion'
 import { useState, useRef } from 'react'
 
@@ -66,7 +63,7 @@ export default function Card({
     <motion.div
       layout
       drag={isTop && !isEditing}
-      dragConstraints={{ left: -200, right: 200, top: -100, bottom: 100 }}
+      dragConstraints={{ left: -200, right: 200, top: -50, bottom: 100 }}
       dragElastic={0.2}
       onDragEnd={handleDragEnd}
       whileDrag={{ scale: 1.05, rotate: 5 }}
@@ -85,7 +82,7 @@ export default function Card({
         stiffness: 300,
         damping: 30
       }}
-      className={`absolute w-80 h-48 rounded-2xl shadow-2xl cursor-pointer ${color} border border-gray-700/50`}
+      className={`absolute w-72 h-56 rounded-2xl shadow-2xl cursor-pointer ${color} border border-gray-700/50`}
       onClick={handleClick}
       style={{ zIndex }}
     >

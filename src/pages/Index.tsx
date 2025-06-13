@@ -1,6 +1,3 @@
-
-'use client'
-
 import CardStack from '@/components/CardStack'
 import ShuffleButton from '@/components/ShuffleButton'
 

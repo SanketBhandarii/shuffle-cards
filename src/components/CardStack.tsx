@@ -1,6 +1,3 @@
-
-'use client'
-
 import { useState, useEffect, useCallback } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import Card from './Card'
